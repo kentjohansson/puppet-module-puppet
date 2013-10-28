@@ -89,6 +89,24 @@ The mode for the config file.
 
 - *Default*: 0644
 
+config_logdir
+-------------
+The location of the puppet log dir.
+
+- *Default*: /var/log/puppet
+
+config_rundir
+-------------
+The location of the puppet run dir.
+
+- *Default*: /var/run/puppet
+
+config_ssldir
+-------------
+The location of the puppet log dir.
+
+- *Default*: $vardir/ssl
+
 env
 ---
 The selected environment for the client.

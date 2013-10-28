@@ -4,15 +4,15 @@
 [main]
     # The Puppet log directory.
     # The default value is '$vardir/log'.
-    logdir = /var/log/puppet
+    logdir = <%= @config_logdir %>
 
     # Where Puppet PID files are kept.
     # The default value is '$vardir/run'.
-    rundir = /var/run/puppet
+    rundir = <%= @config_rundir %>
 
     # Where SSL certificates are kept.
     # The default value is '$confdir/ssl'.
-    ssldir = $vardir/ssl
+    ssldir = <%= @config_ssldir %>
 
     archive_files = true
     archive_file_server = <%= @puppet_server %>
